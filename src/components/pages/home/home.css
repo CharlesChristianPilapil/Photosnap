@@ -1,0 +1,126 @@
+.home-boxes {
+    display: grid;
+    grid-template-columns: 100%; /* Set the grid to a single column by default */
+    grid-template-rows: auto; /* Allow rows to adjust based on content */
+}
+
+.home-boxes img {
+    width: 100%;
+    height: auto; /* Ensure the image scales proportionally */
+}
+
+.home-boxes .boxes-text {
+    margin-top: -5px;
+    height: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    color: white;
+}
+
+
+.home-bg-black {
+    background-color: black;
+}
+
+.home-bg-white {
+    background-color: #E8E4C9;
+    color: black;
+}
+
+.home-bg-white * {
+    color: black;
+}
+
+.home-boxes .boxes-text p {
+    color: gray;
+}
+
+.home-boxes .arrow {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.home-bg-black .arrow img {
+    width: 40px;
+    filter: invert(89%) sepia(61%) saturate(9%) hue-rotate(185deg) brightness(110%) contrast(102%);
+}
+
+.home-bg-white .arrow img {
+    width: 40px;
+}
+
+
+@media (min-width: 724px) {
+    .home-boxes:nth-child(odd) {
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .home-boxes:nth-child(odd) {
+        grid-template-columns: 70% 30%;
+    }
+
+    .home-boxes:nth-child(even) {
+        grid-template-columns: 30% 70%;
+    }
+
+    .home-boxes .img-div {
+        background-color: white;
+        width: auto;
+        object-fit: fill;
+        object-position: center;
+    }
+
+    
+    .home-boxes .img-div:nth-child(2n+1) {
+        order: 2;
+    }
+
+
+    .home-boxes .order-1 {
+        order: 1;
+    }
+
+    .home-boxes .order-2 {
+        order: 2;
+    }
+
+    .home-boxes .img-div img {
+        width: 100%;
+        height: 100%;
+        object-position: top;
+        object-fit: cover;
+    }
+
+    .home-boxes .boxes-text {
+        margin-top: 0;
+        height: 500px;
+        padding: 0 2rem;
+        justify-content: center;
+    }
+
+    .home .home-boxes .boxes-text:nth-child(2) {
+        margin-top: 0;
+        height: 500px;
+        padding: 0 2rem;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .home-boxes:nth-child(odd) {
+        grid-template-columns: 40% 60%; /* Define two columns */
+        height: 500px;
+    }
+
+    .home-boxes:nth-child(even) {
+        grid-template-columns: 60% 40%; /* Define two columns */
+        height: 500px;
+    }
+}
