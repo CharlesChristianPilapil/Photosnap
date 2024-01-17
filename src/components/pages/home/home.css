@@ -30,7 +30,7 @@
 }
 
 .home-bg-white * {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .home-boxes .boxes-text p {
