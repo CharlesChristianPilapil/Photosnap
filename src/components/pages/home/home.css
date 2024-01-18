@@ -40,6 +40,7 @@
 
 .home-boxes .arrow {
     display: flex;
+    width: fit-content;
     gap: 2rem;
     align-items: center;
     cursor: pointer;
