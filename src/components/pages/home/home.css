@@ -1,3 +1,5 @@
+/* home grid */
+
 .home-boxes {
     display: grid;
     overflow-x: hidden;
@@ -46,6 +48,10 @@
     cursor: pointer;
 }
 
+.home-boxes a {
+    width: fit-content;
+}
+
 .home-bg-black .arrow img {
     width: 40px;
     filter: invert(89%) sepia(61%) saturate(9%) hue-rotate(185deg) brightness(110%) contrast(102%);
@@ -53,6 +59,93 @@
 
 .home-bg-white .arrow img {
     width: 40px;
+}
+
+
+/* 4 images  */
+
+.homefeature-container {
+    background-color: rgb(0, 0, 0);
+}
+
+.homefeature-container * {
+    color: white;
+}
+
+.homefeature-wrapper {
+    display: grid;
+}
+
+.homefeature-wrapper .homefeature-box {
+    background-image: url(../../../assets/stories/desktop/mountains.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    display: grid;
+    align-items: flex-end;
+    transition: transform 0.3s ease; /* Use the standard transform property */
+}
+
+.homefeature-wrapper .homefeature-box:hover {
+    border-bottom: 5px solid white;
+}
+
+.homefeature-wrapper .sunset {
+    background-image: url(../../../assets/stories/desktop/cityscapes.jpg);
+}
+
+.homefeature-wrapper .voyage {
+    background-image: url(../../../assets/stories/desktop/18-days-voyage.jpg);
+}
+
+.homefeature-wrapper .architecturals {
+    background-image: url(../../../assets/stories/desktop/architecturals.jpg);
+}
+
+.homefeature-wrapper .homefeature-box .line {
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+}
+
+.homefeature-wrapper .homefeature-box .feature-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2rem;
+    background-color: rgb(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.homefeature-wrapper .homefeature-box p {
+    font-size: 14px;
+}
+
+.feature-box-wrapper .homefeature-arrow img {
+    width: 40px;
+    filter: invert(89%) sepia(61%) saturate(9%) hue-rotate(185deg) brightness(110%) contrast(102%);
+}
+
+.feature-box-wrapper .homefeature-arrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 624px) {
+    .homefeature-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 924px) {
+    .homefeature-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 

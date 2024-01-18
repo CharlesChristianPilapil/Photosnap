@@ -5,12 +5,13 @@ import { motion } from 'framer-motion';
 import arrow from '../../../assets/shared/desktop/arrow.svg';
 import homeimages from './homeimages';
 import { slideIn } from '../../../motion';
+import { Link, NavLink } from 'react-router-dom';
 
 const HomeGrid = () => {
   const arrowVariants = {
     default: { color: '#FFFFFF' },
     hover: { color: '#808080', x: '10px' },
-  };
+};
 
   const [selectedImage1, setSelectedImage1] = useState('');
   const [selectedImage2, setSelectedImage2] = useState('');
@@ -196,6 +197,7 @@ const HomeGrid = () => {
             Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.
           </motion.p>
 
+          <NavLink to="/Stories"> 
           <motion.div
             variants={arrowVariants}
             className='arrow'
@@ -208,7 +210,7 @@ const HomeGrid = () => {
               whileInView="show"
               viewport={{ once: false }}
             >
-              GET AN INVITE
+              VIEW THE STORIES
             </motion.h4>
             <motion.img
               src={arrow}
@@ -219,6 +221,9 @@ const HomeGrid = () => {
               viewport={{ once: false }}
             />
           </motion.div>
+          
+          </NavLink>
+
         </div>
       </div>
     </div>

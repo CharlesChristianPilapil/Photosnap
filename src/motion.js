@@ -37,3 +37,24 @@ export const slideIn = (direction, type, delay, duration) => ({
     },
   },
 });
+
+export const opacityVariant = ( direction, initPos, type, delay, duration  ) => {
+  return {
+    hidden: {
+      opacity: 0,
+      x: direction === "left" ? `-${initPos}` : direction === "right" ? `${initPos}` : 0,
+      y: direction === "up" ? `${initPos}` : direction === "down" ? `${initPos}` : 0,
+    },
+    show: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        type,
+        delay,
+        duration,
+        when: "beforeChildren"
+      }
+    }
+  }
+}
