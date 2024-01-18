@@ -14,7 +14,7 @@ const HomeFeatures = () => {
                 whileHover={{ y: '-5%' ,
                 transition: {
                     delay: 0,
-                    duration: 0,
+                    duration: .2,
                     type: 'spring',
                 }
             }}
@@ -42,7 +42,7 @@ const HomeFeatures = () => {
                 whileHover={{ y: '-5%' ,
                 transition: {
                     delay: 0,
-                    duration: 0,
+                    duration: .2,
                     type: 'spring',
                 }
             }}
@@ -69,7 +69,7 @@ const HomeFeatures = () => {
                 whileHover={{ y: '-5%' ,
                 transition: {
                     delay: 0,
-                    duration: 0,
+                    duration: .2,
                     type: 'spring',
                 }
             }}
@@ -96,7 +96,7 @@ const HomeFeatures = () => {
                 whileHover={{ y: '-5%' ,
                 transition: {
                     delay: 0,
-                    duration: 0,
+                    duration: .2,
                     type: 'spring',
                 }
             }}
