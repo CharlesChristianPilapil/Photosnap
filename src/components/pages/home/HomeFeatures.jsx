@@ -8,7 +8,7 @@ const HomeFeatures = () => {
     <div className='homefeature-container'>
         <div className='homefeature-wrapper'>
             <motion.div className="homefeature-box"
-                variants={opacityVariant('down', '10%', 'tween', 0, .5)}
+                variants={opacityVariant('left', '10%', 'tween', 0, .5)}
                 initial='hidden'
                 whileInView='show'
                 whileHover={{ y: '-5%' ,
@@ -36,7 +36,7 @@ const HomeFeatures = () => {
             </motion.div>
 
             <motion.div className="homefeature-box sunset"
-                variants={opacityVariant('down', '10%', 'tween', 0.25, .5)}
+                variants={opacityVariant('left', '10%', 'tween', 0.25, .5)}
                 initial='hidden'
                 whileInView='show'
                 whileHover={{ y: '-5%' ,
@@ -63,7 +63,7 @@ const HomeFeatures = () => {
             </motion.div>
 
             <motion.div className="homefeature-box voyage"
-                variants={opacityVariant('down', '10%', 'tween', 0.5, .5)}
+                variants={opacityVariant('left', '10%', 'tween', 0.5, .5)}
                 initial='hidden'
                 whileInView='show'
                 whileHover={{ y: '-5%' ,
@@ -90,7 +90,7 @@ const HomeFeatures = () => {
             </motion.div>
 
             <motion.div className="homefeature-box architecturals"
-                variants={opacityVariant('down', '10%', 'tween', 0.75, .5)}
+                variants={opacityVariant('left', '10%', 'tween', 0.75, .5)}
                 initial='hidden'
                 whileInView='show'
                 whileHover={{ y: '-5%' ,

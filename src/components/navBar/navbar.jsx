@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { Link, NavLink } from 'react-router-dom';
+import logo from '../../assets/shared/desktop/logo.svg'
 
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = () => {
       <nav>
         <div className="nav-wrapper container x-padding">
           <div className="logo">
-            <Link to="/"> Photosnap </Link>
+            <Link to="/"> <img src={logo} alt="logo" /> </Link>
           </div>
 
           <div className="ul-wrapper">
