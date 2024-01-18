@@ -1,5 +1,6 @@
 .home-boxes {
     display: grid;
+    overflow-x: hidden;
     grid-template-columns: 100%; /* Set the grid to a single column by default */
     grid-template-rows: auto; /* Allow rows to adjust based on content */
 }
@@ -84,10 +85,13 @@
 
     .home-boxes .order-1 {
         order: 1;
+        height: 500px;
+        overflow-y: hidden;
     }
 
     .home-boxes .order-2 {
         order: 2;
+        height: 100%;
     }
 
     .home-boxes .img-div img {

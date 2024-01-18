@@ -49,7 +49,6 @@ const HomeGrid = () => {
 
   return (
     <div>
-      {/* First Image */}
       <div className='home-boxes'>
         <div className='img-div'>
           <motion.img
