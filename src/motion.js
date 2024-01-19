@@ -62,7 +62,7 @@ export const opacityVariant = ( direction, initPos, type, delay, duration  ) => 
 export const blueVariant = (direction, initPos, type, delay, duration) => {
   return {
     hidden: {
-      filter: "blur(2px)", // Initial blur value
+      filter: "blur(5px)", // Initial blur value
       x: direction === "left" ? `-${initPos}` : direction === "right" ? `${initPos}` : 0,
       y: direction === "up" ? `${initPos}` : direction === "down" ? `${initPos}` : 0,
     },

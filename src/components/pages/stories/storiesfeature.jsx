@@ -41,7 +41,7 @@ const Storiesfeature = () => {
                 featureJSON.map((data, index) => {
                     return (
                         <motion.div className="stories-feature-box"
-                            variants={blueVariant('down', '5%','spring', 0.5, 1)}
+                            variants={blueVariant('down', 0,'spring', 0.2, 1)}
                             initial='hidden'
                             whileInView='show'
                             key={data.id}
