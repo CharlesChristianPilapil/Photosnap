@@ -7,6 +7,12 @@ import desktop2 from '../../../assets/home/desktop/beautiful-stories.jpg';
 import mobile3 from '../../../assets/home/desktop/designed-for-everyone.jpg';
 import tablet3 from '../../../assets/home/tablet/designed-for-everyone.jpg';
 import desktop3 from '../../../assets/home/desktop/designed-for-everyone.jpg';
+import responsive from '../../../assets/features/desktop/responsive.svg';
+import upload from '../../../assets/features/desktop/no-limit.svg';
+import embed from '../../../assets/features/desktop/embed.svg';
+
+
+
 
 const homeimages = {
     mobile1,
@@ -17,7 +23,10 @@ const homeimages = {
     desktop2,
     mobile3,
     tablet3,
-    desktop3
+    desktop3,
+    responsive,
+    upload,
+    embed
 };
 
 export default homeimages;

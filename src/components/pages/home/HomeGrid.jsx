@@ -64,46 +64,50 @@ const HomeGrid = () => {
         </div>
 
         <div className='boxes-text home-bg-black'>
-          <motion.h1
-            variants={slideIn('left', 'spring', 0, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-          >
-            CREATE AND SHARE YOUR PHOTO STORIES.
-          </motion.h1>
-          <motion.p
-            variants={slideIn('left', 'spring', 0.1, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-          >
-            Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.
-          </motion.p>
 
-          <motion.div
-            variants={arrowVariants}
-            className='arrow'
-            initial="default"
-            whileHover="hover"
-          >
-            <motion.h4
-              variants={slideIn('left', 'spring', 0.2, 1)}
+          <div className='boxes-text-wrapper'>
+            <motion.h1
+              variants={slideIn('left', 'spring', 0, 1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false }}
             >
-              GET AN INVITE
-            </motion.h4>
-            <motion.img
-              src={arrow}
-              alt=""
-              variants={slideIn('left', 'spring', 0.2, 1)}
+              CREATE AND SHARE YOUR PHOTO STORIES.
+            </motion.h1>
+            <motion.p
+              variants={slideIn('left', 'spring', 0.1, 1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false }}
-            />
-          </motion.div>
+            >
+              Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.
+            </motion.p>
+
+            <motion.div
+              variants={arrowVariants}
+              className='arrow'
+              initial="default"
+              whileHover="hover"
+            >
+              <motion.h4
+                variants={slideIn('left', 'spring', 0.2, 1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false }}
+              >
+                GET AN INVITE
+              </motion.h4>
+              <motion.img
+                src={arrow}
+                alt=""
+                variants={slideIn('left', 'spring', 0.2, 1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false }}
+              />
+            </motion.div>
+          </div>
+
         </div>
       </div>
 
@@ -122,46 +126,48 @@ const HomeGrid = () => {
         </div>
 
         <div className='boxes-text order-2  home-bg-white'>
-          <motion.h1
-            variants={slideIn('right', 'spring', 0, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-          >
-            BEAUTIFUL STORIES EVERY TIME
-          </motion.h1>
-          <motion.p
-            variants={slideIn('right', 'spring', 0.1, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-          >
-            We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.
-          </motion.p>
+          <div className='boxes-text-wrapper'>
+              <motion.h1
+                variants={slideIn('right', 'spring', 0, 1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false }}
+              >
+                BEAUTIFUL STORIES EVERY TIME
+              </motion.h1>
+              <motion.p
+                variants={slideIn('right', 'spring', 0.1, 1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false }}
+              >
+                We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.
+              </motion.p>
 
-          <motion.div
-            variants={arrowVariants}
-            className='arrow'
-            initial="default"
-            whileHover="hover"
-          >
-            <motion.h4
-              variants={slideIn('right', 'spring', 0.2, 1)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false }}
-            >
-              GET AN INVITE
-            </motion.h4>
-            <motion.img
-              src={arrow}
-              alt=""
-              variants={slideIn('right', 'spring', 0.2, 1)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false }}
-            />
-          </motion.div>
+              <motion.div
+                variants={arrowVariants}
+                className='arrow'
+                initial="default"
+                whileHover="hover"
+              >
+                <motion.h4
+                  variants={slideIn('right', 'spring', 0.2, 1)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: false }}
+                >
+                  GET AN INVITE
+                </motion.h4>
+                <motion.img
+                  src={arrow}
+                  alt=""
+                  variants={slideIn('right', 'spring', 0.2, 1)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: false }}
+                />
+              </motion.div>
+            </div>
         </div>
       </div>
 
@@ -180,49 +186,52 @@ const HomeGrid = () => {
         </div>
 
         <div className='boxes-text home-bg-white'>
-          <motion.h1
-            variants={slideIn('left', 'spring', 0, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-          >
-            DESIGNED FOR EVERYONE
-          </motion.h1>
-          <motion.p
-            variants={slideIn('left', 'spring', 0.1, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false }}
-          >
-            Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.
-          </motion.p>
 
-          <NavLink to="/Stories"> 
-          <motion.div
-            variants={arrowVariants}
-            className='arrow'
-            initial="default"
-            whileHover="hover"
-          >
-            <motion.h4
-              variants={slideIn('left', 'spring', 0.2, 1)}
+          <div className='boxes-text-wrapper'>
+            <motion.h1
+              variants={slideIn('left', 'spring', 0, 1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false }}
             >
-              VIEW THE STORIES
-            </motion.h4>
-            <motion.img
-              src={arrow}
-              alt=""
-              variants={slideIn('left', 'spring', 0.2, 1)}
+              DESIGNED FOR EVERYONE
+            </motion.h1>
+            <motion.p
+              variants={slideIn('left', 'spring', 0.1, 1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false }}
-            />
-          </motion.div>
-          
-          </NavLink>
+            >
+              Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.
+            </motion.p>
+
+            <NavLink to="/Stories"> 
+            <motion.div
+              variants={arrowVariants}
+              className='arrow'
+              initial="default"
+              whileHover="hover"
+            >
+              <motion.h4
+                variants={slideIn('left', 'spring', 0.2, 1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false }}
+              >
+                VIEW THE STORIES
+              </motion.h4>
+              <motion.img
+                src={arrow}
+                alt=""
+                variants={slideIn('left', 'spring', 0.2, 1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false }}
+              />
+            </motion.div>
+            
+            </NavLink>
+          </div>
 
         </div>
       </div>

@@ -6,6 +6,8 @@
 
 body {
   overflow-x: hidden;
+  background-image: url(../src/assets/background.jpg);
+
 }
 
 .index {
@@ -39,11 +41,4 @@ body {
     z-index: 0;
     position: relative;
   }
-}
-
-@media (min-width: 1440px) {
-  body {
-    background-image: url(../src/assets/background.jpg);
-  }
-  
 }

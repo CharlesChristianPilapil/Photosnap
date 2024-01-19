@@ -17,8 +17,8 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <footer className='container'>
-      <div className="footer-wrapper x-padding">
+    <footer>
+      <div className="footer-wrapper x-padding container">
 
         <motion.div className='footer-left'
           variants={ slideIn('up', 'spring', 0, 1) }

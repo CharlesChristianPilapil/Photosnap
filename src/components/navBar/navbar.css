@@ -180,24 +180,3 @@ ul li a:hover {
         list-style: none;
     }
 }
-
-@media (min-width: 1440px) {
-    .navbar {
-        width: 1440px;
-        margin: 0 auto;
-        margin-bottom: 70px;
-        overflow-x: hidden;
-        position: relative;
-        overflow-x: hidden;
-        z-index: 10;
-    }
-    
-    nav {
-      height: 70px;
-      background-color: white;
-      position: fixed;
-      width: 1440px;
-      z-index: 5;
-      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    }
-}
