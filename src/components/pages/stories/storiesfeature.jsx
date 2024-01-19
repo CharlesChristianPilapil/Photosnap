@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import image from '../../../assets/stories/mobile/moon-of-appalacia.jpg';
 import arrow from '../../../assets/shared/desktop/arrow.svg';
-import { blueVariant } from '../../../motion';
+import { opacityVariant } from '../../../motion';
 import { motion } from 'framer-motion';
 import featureJSON from './stories.json'
 import storiesimages from './storiesImages';
@@ -30,7 +30,6 @@ const Storiesfeature = () => {
       };
     }, []);
 
-
   return (
     <div className='stories-feature'>
 
@@ -39,9 +38,11 @@ const Storiesfeature = () => {
 
             {
                 featureJSON.map((data, index) => {
+
+
                     return (
                         <motion.div className="stories-feature-box"
-                            variants={blueVariant('down', 0,'spring', 0.2, 1)}
+                            variants={opacityVariant('down', '10%','spring', 0, 1)}
                             initial='hidden'
                             whileInView='show'
                             key={data.id}
