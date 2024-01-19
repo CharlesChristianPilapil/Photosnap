@@ -41,12 +41,12 @@ export const slideIn = (direction, type, delay, duration) => ({
 export const opacityVariant = ( direction, initPos, type, delay, duration  ) => {
   return {
     hidden: {
-      opacity: 0,
+      blur: 5,
       x: direction === "left" ? `-${initPos}` : direction === "right" ? `${initPos}` : 0,
       y: direction === "up" ? `${initPos}` : direction === "down" ? `${initPos}` : 0,
     },
     show: {
-      opacity: 1,
+      blur: 0,
       x: 0,
       y: 0,
       transition: {
@@ -58,3 +58,24 @@ export const opacityVariant = ( direction, initPos, type, delay, duration  ) => 
     }
   }
 }
+
+export const blueVariant = (direction, initPos, type, delay, duration) => {
+  return {
+    hidden: {
+      filter: "blur(2px)", // Initial blur value
+      x: direction === "left" ? `-${initPos}` : direction === "right" ? `${initPos}` : 0,
+      y: direction === "up" ? `${initPos}` : direction === "down" ? `${initPos}` : 0,
+    },
+    show: {
+      filter: "blur(0)", // No blur when shown
+      x: 0,
+      y: 0,
+      transition: {
+        type,
+        delay,
+        duration,
+        when: "beforeChildren",
+      },
+    },
+  };
+};

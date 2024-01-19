@@ -52,6 +52,94 @@
     filter: invert(89%) sepia(61%) saturate(9%) hue-rotate(185deg) brightness(110%) contrast(102%);
 }
 
+.stories-feature-wrapper {
+    display: grid;
+    background-color: white;
+
+    & .stories-feature-box {
+        height: 400px;
+        cursor: pointer;
+    }
+}
+
+.stories-box-wrapper {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    & .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0, .5);
+    }
+
+    & .line {
+        width: 100%;
+        height: 1px;
+        background-color: gray;
+    }
+
+    & .feature-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        color: white;
+
+        & p {
+            font-size: 14px;
+        }
+
+        & div:has(p) {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+
+    }
+
+    & .stories-feature-arrow {
+        display: flex;
+        justify-content: space-between;
+
+        & img {
+            width: 40px;
+            filter: invert(89%) sepia(61%) saturate(9%) hue-rotate(185deg) brightness(110%) contrast(102%);
+        }
+    }
+
+
+}
+
+.stories-box-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(150deg,#5a77ff,#bc7198,#ffc593);
+    transition: .5s ease-in-out;
+}
+
+.stories-box-wrapper:hover::after {
+    opacity: 1;
+}
+
+
+
 @media (min-width: 724px) {
 
     .stories-banner-wrapper {
@@ -82,5 +170,22 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 600px;
+    }
+
+    .stories-feature-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 924px) {
+
+    .stories-feature-wrapper {
+
+        grid-template-columns: repeat(4, 1fr);
+
+        & .stories-feature-box {
+            height: 500px;
+            cursor: pointer;
+        }
     }
 }

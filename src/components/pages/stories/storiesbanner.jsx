@@ -1,10 +1,8 @@
 import React from 'react'
-import storiesJSON from './stories.json'
 import arrow from '../../../assets/shared/desktop/arrow.svg';
 import image from '../../../assets/stories/mobile/moon-of-appalacia.jpg';
 import { motion } from 'framer-motion';
 import { slideIn } from '../../../motion';
-
 
 const Storiesbanner = () => {
   return (
