@@ -42,7 +42,7 @@ const Storiesfeature = () => {
 
                     return (
                         <motion.div className="stories-feature-box"
-                            variants={opacityVariant('down', '10%','spring', 0, 1)}
+                            variants={opacityVariant('left', '100%','spring', 0, 1)}
                             initial='hidden'
                             whileInView='show'
                             key={data.id}
