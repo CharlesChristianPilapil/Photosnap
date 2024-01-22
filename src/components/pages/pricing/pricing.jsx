@@ -1,8 +1,13 @@
 import React from 'react'
+import Pricingbanner from './pricingbanner'
+import Pricinglowbanner from './pricinglowbanner'
 
 const Pricing = () => {
   return (
-    <div>Pricing</div>
+    <div className='pricing'>
+      <Pricingbanner />
+      <Pricinglowbanner />
+    </div>
   )
 }
 
