@@ -33,12 +33,14 @@ body {
 }
 
 @media (min-width: 724px) {
-  .x-padding {
-    padding: 0 4rem;
-  }
-
   .index {
     z-index: 0;
     position: relative;
+  }
+}
+
+@media (min-width: 824px) {
+  .x-padding {
+    padding: 0 4rem;
   }
 }

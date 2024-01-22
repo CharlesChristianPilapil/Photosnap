@@ -9,11 +9,14 @@ const Homeslide = () => {
       <div className="home-slide-wrapper container x-padding">
 
         <div className="home-slide-box">
-          <motion.img src={homeimages.responsive} alt="" 
-            variants={slideIn('down', 'spring', 0, 1)}
-            initial='hidden'
-            whileInView='show'
-          />
+          <div className='slide-img-wrapper'>
+            <motion.img src={homeimages.responsive} alt="" 
+              variants={slideIn('down', 'spring', 0, 1)}
+              initial='hidden'
+              whileInView='show'
+            />
+          </div>
+
           <div>
             <motion.h4
               variants={slideIn('down', 'spring', 0.2, 1)}
@@ -29,11 +32,14 @@ const Homeslide = () => {
         </div>
 
         <div className="home-slide-box">
-          <motion.img src={homeimages.upload} alt="" 
-              variants={slideIn('down', 'spring', 0.4, 1)}
-              initial='hidden'
-              whileInView='show'
-          />
+          <div className="slide-img-wrapper">
+            <motion.img src={homeimages.upload} alt="" 
+                variants={slideIn('down', 'spring', 0.4, 1)}
+                initial='hidden'
+                whileInView='show'
+            />
+          </div>
+
 
           <div>
             <motion.h4
@@ -50,11 +56,14 @@ const Homeslide = () => {
         </div>
 
         <div className="home-slide-box">
-          <motion.img src={homeimages.embed} alt="" 
-              variants={slideIn('down', 'spring', 0.7, 1)}
-              initial='hidden'
-              whileInView='show'
-          />
+
+          <div className="slide-img-wrapper">
+            <motion.img src={homeimages.embed} alt="" 
+                variants={slideIn('down', 'spring', 0.7, 1)}
+                initial='hidden'
+                whileInView='show'
+            />
+          </div>
 
           <div>
             <motion.h4

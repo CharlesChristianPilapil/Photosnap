@@ -23,7 +23,7 @@
 }
 
 .home-boxes .boxes-text-wrapper {
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -173,8 +173,15 @@
         flex-direction: column;
         gap: 2rem;
 
-        & img {
-            height: 3rem;
+        & .slide-img-wrapper {
+            height: 72px;
+            width: 72px;
+            display: grid;
+            place-items: center;
+
+            & img {
+                width: 100%;
+            }
         }
 
         & p {
@@ -207,7 +214,7 @@
 
 @media (min-width: 724px) {
     .home-boxes:nth-child(odd) {
-        height: 500px;
+        height: 600px;
         position: relative;
         overflow: hidden;
     }
@@ -235,7 +242,7 @@
 
     .home-boxes .order-1 {
         order: 1;
-        height: 500px;
+        height: 600px;
         overflow: hidden;
     }
 
@@ -253,7 +260,7 @@
 
     .home-boxes .boxes-text {
         margin-top: 0;
-        height: 500px;
+        height: 600px;
         padding: 0 2rem;
         align-items: center;
         justify-content: center;
@@ -261,7 +268,7 @@
 
     .home .home-boxes .boxes-text:nth-child(2) {
         margin-top: 0;
-        height: 500px;
+        height: 600px;
         padding: 0 2rem;
         justify-content: center;
     }
@@ -278,11 +285,11 @@
 @media (min-width: 1024px) {
     .home-boxes:nth-child(odd) {
         grid-template-columns: 40% 60%; /* Define two columns */
-        height: 500px;
+        height: 600px;
     }
 
     .home-boxes:nth-child(even) {
         grid-template-columns: 60% 40%; /* Define two columns */
-        height: 500px;
+        height: 600px;
     }
 }
