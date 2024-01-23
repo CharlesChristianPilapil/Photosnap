@@ -1,0 +1,177 @@
+.subscription {
+    background-color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.price-toggle-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    & .toggle-div {
+        width: 55px;
+        height: 30px;
+        border-radius: 50px;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+        background-color: rgb(204, 204, 204);
+
+        & .toggle-box {
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            background-color: black;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-100%, -50%);
+            transition: .2s ease-in-out;
+        }
+
+        & .toggle-box.active {
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            transform: translate(-3%, -50%);
+            background-color: black;
+            border-radius: 50%;
+        }
+    }
+
+    & h4 {
+        color: gray;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+
+    & h4.active {
+        color: black;
+    }
+}
+
+.offer-wrapper {
+    display: grid;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.offer-boxes {
+    padding: 2rem;
+    position: relative;
+    transition: .2s ease-in-out;
+
+    & .offer-boxes-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        & div {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            gap: .5rem;
+
+            & p {
+                max-width: 400px;
+            }
+        }
+
+        & button {
+            cursor: pointer;
+            padding: .5rem;
+            background-color: transparent;
+            border: 1px solid black;
+            transition: .2s ease-in-out;
+        } 
+    }
+}
+
+.offer-boxes {
+    background-color: whitesmoke;
+}
+
+.offer-boxes:hover {
+    background-color: black;
+    color: white;
+
+    button {
+        border: 1px solid white;
+        color: white;
+        background-color: black;
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (min-width: 624px) {
+    .offer-boxes {
+        & .offer-boxes-wrapper {
+            max-width: 250px;
+
+            & .info {
+                text-align: start;
+                align-items: start;
+                flex-direction: column;
+                gap: .5rem;
+    
+                & p {
+                    max-width: 400px;
+                }
+            }
+
+            & .price {
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                align-items: end;
+            }
+    
+            & button {
+                cursor: pointer;
+                padding: .5rem;
+            } 
+        }
+    }
+}
+
+@media (min-width: 924px) {
+    .offer-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .offer-boxes {
+        & .offer-boxes-wrapper {
+            max-width: max-content;
+
+            & .info {
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                gap: .5rem;
+    
+                & p {
+                    max-width: 400px;
+                }
+            }
+
+            & .price {
+                position: static;
+                right: 1rem;
+                top: 1rem;
+                align-items: center;
+            }
+    
+        }
+    }
+}

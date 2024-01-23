@@ -1,13 +1,16 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { opacityVariant } from '../../../motion'
+import pricingConstants from './pricingConstants'
+
+const image = pricingConstants.hero;
 
 const Pricingbanner = () => {
   return (
     <div>
         <div className="banner-wrapper">
         <div className="image-wrapper">
-            <motion.img src='' alt="feature-banner" 
+            <motion.img src={image.mobile} alt="feature-banner" 
             variants={opacityVariant('right', '100%', 'spring', 0, 1)}
             initial='hidden'
             whileInView='show'
