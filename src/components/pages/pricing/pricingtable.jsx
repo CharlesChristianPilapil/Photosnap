@@ -4,7 +4,6 @@ import pricingConstants from './pricingConstants';
 import { motion } from 'framer-motion';
 
 const tableData = pricingConstants.table;
-console.log(tableData);
 
 const Pricingtable = () => {
   return (
