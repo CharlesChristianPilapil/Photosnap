@@ -5,8 +5,6 @@ import { motion } from 'framer-motion';
 
 const subs = pricingConstants.subscription;
 
-console.log(subs)
-
 const Pricingsubscription = () => {
     const [isToggled, setToggled] = useState(false);
 

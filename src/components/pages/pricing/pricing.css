@@ -113,6 +113,98 @@
     }
 }
 
+.table {
+    background-color: white;
+    padding-bottom: 3rem;
+
+    & .table-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    & table {
+        border-collapse: collapse;
+        width: 100%;
+
+        /* & tr {
+            border-bottom: 1px solid gray;
+        } */
+    }
+
+    & th {
+        text-align: start;
+        padding: 10px 0;
+    }
+}
+
+.tablet-th {
+    display: none;
+}
+
+.main-tr {
+    border-bottom: 1px solid black;
+}
+
+table table {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mobile-table-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid gray;
+    justify-content: space-around;
+}
+
+.td {
+    width: 100%;
+    /* display: inline-block; */
+}
+
+.header {
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+}
+
+.tablet-table {
+    text-align: center;
+
+    th, td {
+        text-align: center;
+    }
+
+    .tablet-table-header {
+        text-align: start;
+    }
+
+}
+
+.tablet-table tr {
+    border-bottom: 1px solid gray;
+    
+    & td {
+        padding: 1rem 0;
+    }
+}
+
+.tablet-table-botder-bottom {
+    border-bottom: 1px solid black;
+}
+
+.tablet-table-wrapper {
+    display: none;
+}
+
+.table h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+
 @media (min-width: 624px) {
     .offer-boxes {
         & .offer-boxes-wrapper {
@@ -141,6 +233,16 @@
                 padding: .5rem;
             } 
         }
+    }
+}
+
+@media (min-width: 724px) {
+    .mobile-table {
+        display: none;
+    }
+
+    .tablet-table-wrapper {
+        display: block;
     }
 }
 
